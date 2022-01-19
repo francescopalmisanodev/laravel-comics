@@ -4,13 +4,27 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
 .container {
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1220px;
 }
 
+header {
+  height: 11vh;
+}
 header img {
   width: 80px;
   padding: 15px 0;
@@ -27,7 +41,7 @@ header ul li {
   align-items: center;
   margin: 0 20px;
   text-transform: uppercase;
-  height: 80px;
+  height: 10vh;
   border-bottom: 3px solid #0182f9;
 }
 header ul li a {
@@ -55,4 +69,40 @@ footer .button {
   color: white;
   padding: 10px;
   border: 2px solid #0c7cec;
+}
+
+.bg {
+  background: #1c1c1c;
+  height: 100%;
+}
+.bg .container {
+  color: white;
+}
+.bg .container .cards {
+  margin: 50px auto;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.bg .container .cards .card {
+  width: 16.6666666667%;
+  padding: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.bg .container .cards .card img {
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top left;
+     object-position: top left;
+  overflow: hidden;
+}
+.bg .container .button {
+  margin: 0 auto;
+  padding: 10px 60px;
+  background: #0182f9;
+  margin-bottom: 20px;
 }
