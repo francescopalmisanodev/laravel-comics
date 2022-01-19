@@ -8,7 +8,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  max-width: 1180px;
+  max-width: 1200px;
 }
 
 header img {
@@ -29,4 +29,30 @@ header ul li {
   text-transform: uppercase;
   height: 80px;
   border-bottom: 3px solid #0182f9;
+}
+header ul li a {
+  text-decoration: none;
+}
+
+footer {
+  background: #303030;
+  height: 10vh;
+}
+footer .container {
+  justify-content: space-between;
+  height: 100%;
+}
+footer .social {
+  width: 35%;
+  color: #0182f9;
+  font-size: 20px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .button {
+  color: white;
+  padding: 10px;
+  border: 2px solid #0c7cec;
 }

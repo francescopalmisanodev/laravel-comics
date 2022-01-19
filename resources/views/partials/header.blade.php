@@ -5,7 +5,9 @@
         </a>
         <nav>
             <ul>
-                <li>Comics</li>
+                <li>
+                    <a href="{{ route('home') }}">Comics</a>
+                </li>
                 <li>News</li>
             </ul>
         </nav>
