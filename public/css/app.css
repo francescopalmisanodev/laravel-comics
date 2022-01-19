@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  max-width: 1180px;
+}
+
+header img {
+  width: 80px;
+  padding: 15px 0;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+header ul li {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  text-transform: uppercase;
+  height: 80px;
+  border-bottom: 3px solid #0182f9;
+}
