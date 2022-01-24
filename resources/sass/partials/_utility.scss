@@ -3,5 +3,17 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 1220px;
+    max-width: 1200px;
+}
+.blue {
+    background: $blue-comics;
+}
+.h-30 {
+    height: 30px;
+}
+.txt-right {
+    text-align: right;
+}
+.white-txt {
+    color: white;
 }

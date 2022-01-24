@@ -3,10 +3,12 @@
     <div class="bg">
         <div class="container">
             <div class="cards">
-                @foreach ($comics as $comic)
+                @foreach ($comics as $index => $comic)
                     <div class="card">
-                        <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                        <h3>{{ $comic['title'] }}</h3>
+                        <a href="{{ route('comic-detail', ['id' => $index]) }}">
+                            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                            <h3>{{ $comic['title'] }}</h3>
+                        </a>
                     </div>
                 @endforeach
             </div>
@@ -14,5 +16,6 @@
                 LOAD MORE
             </div>
         </div>
+        <div class="blue h-30"></div>
     </div>
 @endsection

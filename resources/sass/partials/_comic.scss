@@ -1,0 +1,50 @@
+.jumbo {
+    background-image: url(../images/jumbotron.jpg);
+    height: 300px;
+    img {
+        width: 150px;
+        transform: translateY(+120px);
+    }
+}
+.blue {
+    height: 70px;
+}
+.row {
+    display: flex;
+    margin: 150px 0;
+    .info {
+        padding: 0 50px 0 0;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            text-transform: uppercase;
+            color: #103f5d;
+        }
+        .green {
+            background: #55ba59;
+            color: lightgreen;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+            border-bottom: 1px solid black;
+            font-weight: 600;
+            .price {
+                padding: 15px;
+            }
+            .available {
+                display: flex;
+                align-items: center;
+                .button {
+                    margin-left: 20px;
+                    padding: 15px;
+                    border-left: 1px solid black;
+                }
+            }
+        }
+        p {
+            color: gray;
+            line-height: 1.5em;
+        }
+    }
+}
